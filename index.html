@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang=""><head>
+                <script>
+                  function g(variable) {
+                    var query = window.location.search.substring(1);
+                    var vars = query.split('&');
+                    for (var i = 0; i < vars.length; i++) {
+                      var pair = vars[i].split('=');
+                      if (pair[0] == variable) {
+                        return pair[1];
+                      }
+                    }
+                    return false;
+                  }
+                  function i() {
+                    return g('is_open_sptu') && g('sptu_opened');
+                  }
+                  function s() {
+                    if (i()) {
+                      document.documentElement.classList.add('-sptu');
+                      document.documentElement.style.fontWeight = '500';
+                    }else{
+                      document.documentElement.style.fontWeight = '400';
+                    }
+                  }
+                  s();
+                </script>
+                
+<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1" id="viewport-config"><meta property="al:ios:url" content="sawaksa://"><meta property="al:ios:app_store_id" content="1574856714"><meta property="al:ios:app_name" content="Sawa KSA"><meta property="al:android:url" content="sawaksa://home_page"><meta property="al:android:package" content="com.badambiz.pk.saudi"><meta property="al:android:app_name" content="Sawa KSA"><meta property="og:title" content="Sawa KSA"><meta property="og:description" content="متعة البث الصوتي المباشر"><meta property="og:image" itemprop="image" content="https://i.kinoshare.cn/appicons/logo_sawa_256_20230303.png"><meta property="og:type" content="website"><meta property="og:image:type" content="image/png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://i.kinoshare.cn/appicons/logo_sawa_256_20230303.png"><meta name="viewport" content="width=device-width,initial-scale=1"><title></title><link href="css/chunk-common.0031a5f0.css" rel="preload" as="style"><link href="css/chunk-vendors.8126b325.css" rel="preload" as="style"><link href="css/index.ea4cc4ca.css" rel="preload" as="style"><link href="js/chunk-common.70fb0c58.js" rel="modulepreload" as="script"><link href="js/chunk-vendors.24968604.js" rel="modulepreload" as="script"><link href="js/index.42ae6530.js" rel="modulepreload" as="script"><link href="css/chunk-vendors.8126b325.css" rel="stylesheet"><link href="css/chunk-common.0031a5f0.css" rel="stylesheet"><link href="css/index.ea4cc4ca.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script type="module" src="js/chunk-vendors.24968604.js"></script><script type="module" src="js/chunk-common.70fb0c58.js"></script><script type="module" src="js/index.42ae6530.js"></script><script>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()},!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script><script src="js/chunk-vendors-legacy.dbb4cad8.js" nomodule></script><script src="js/chunk-common-legacy.145d0257.js" nomodule></script><script src="js/index-legacy.52032a92.js" nomodule></script></body></html>
